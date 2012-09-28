@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<books>
+	<book>
+		<id>book:urn:com:bbyopen:mongodb</id>
+		<title>urn.com.bbyopen.mongodb</title>
+		<desc>Module for inserting and querying MongoDB</desc>
+		<toc>
+			<item id="urn:com:bbyopen:mongodb:guide"/>
+			<item id="urn:com:bbyopen:mongodb:example"/>
+		</toc>
+	</book>
+</books>

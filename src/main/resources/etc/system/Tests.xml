@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<tests>
+	<test>
+		<id>test:urn:com:bbyopen:mongodb</id>
+		<name>urn.com.bbyopen.mongodb</name>
+		<desc>Module for inserting and querying MongoDB</desc>
+		<uri>res:/resources/test/testlist.xml</uri>
+	</test>
+</tests>
