@@ -1,22 +1,16 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <testlist>
-
-	<test name="Invoke service by identifier">
+	<test name="Insert Data into MongoDB">
 		<request>
-			<identifier>res:/urn_com_bbyopen_mongodb/service/Hello</identifier>
+			<identifier>active:mongoDB</identifier>
+			<argument method="as-string" name="dbserver">localhost:27017</argument>
+			<argument method="as-string" name="dbname">test</argument>
+			<argument method="as-string" name="collection">test</argument>
+			<argument method="as-string" name="action">insert</argument>
+			<argument method="as-string" name="data">{"hello":"hallo", "shalbs":"shalbs2"}</argument>
 		</request>
 		<assert>
-			<stringEquals>Input value: Hello</stringEquals>
-		</assert>
-	</test>
-
-	<test name="Invoke service by endpoint">
-		<request>
-			<identifier>meta:ExampleEndpoint</identifier>
-			<argument name="value">Hello</argument>
-		</request>
-		<assert>
-			<stringEquals>Input value: Hello</stringEquals>
+			<notNull/>
 		</assert>
 	</test>
 </testlist>
